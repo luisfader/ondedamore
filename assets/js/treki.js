@@ -11,5 +11,15 @@ window.TREKI = [
       "quote": "— Amore mio. Mi senti? Sono qui. Sto arrivando. Anche attraverso la pietra, anche attraverso il dolore, anche attraverso la paura.",
       "song": true,
       "duration": "4:37"
+  },
+  {
+      "id": "16-ti-ricordi",
+      "title": "Ti ricordi?",
+      "chapter": "Capitolo 25",
+      "scene": "Il quartiere vecchio si risveglia",
+      "img": "cover.jpg",
+      "quote": "— Non guardare là, mamma. Guarda me. Ti ricordi il lago, d'estate? I pirozhki? Ti ricordi che ti arrabbiavi perché dimenticavo l'asciugamano?",
+      "song": true,
+      "duration": "3:26"
   }
 ];
