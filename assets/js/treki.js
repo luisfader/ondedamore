@@ -21,5 +21,15 @@ window.TREKI = [
       "quote": "— Non guardare là, mamma. Guarda me. Ti ricordi il lago, d'estate? I pirozhki? Ti ricordi che ti arrabbiavi perché dimenticavo l'asciugamano?",
       "song": true,
       "duration": "3:26"
+  },
+  {
+      "id": "17-il-quaderno",
+      "title": "Il quaderno",
+      "chapter": "Capitolo 27",
+      "scene": "Il quaderno sul pavimento",
+      "img": "cover.jpg",
+      "quote": "E all'ultima pagina c'era una scritta:\nGlielo regalerò quando tutto sarà finito.",
+      "song": true,
+      "duration": "4:22"
   }
 ];
