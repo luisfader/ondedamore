@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Onde d'amore — la colonna sonora</title>
+  <meta name="description" content="La colonna sonora del romanzo di Roberto Fader «Onde d'amore».">
+  <meta property="og:title" content="Onde d'amore — la colonna sonora">
+  <meta property="og:description" content="Le canzoni del romanzo «Onde d'amore».">
+  <meta property="og:image" content="assets/img/cover.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=202611070010">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="waves" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+  <header class="hero">
+    <img class="hero-bg" src="assets/img/hero.jpg" alt="">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="wrap hero-inner">
+      <p class="eyebrow">Sinea · Verdegrado · La colonna sonora</p>
+      <h1>Onde <em>d'amore</em></h1>
+      <p class="lead">Le canzoni del romanzo, nell'ordine in cui risuonano nel libro.</p>
+      <p class="quote">«Amore mio. Mi senti? Sono qui. Sto arrivando.»</p>
+      <button class="btn" id="playAll" type="button">▶ Ascolta dall'inizio</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="intro">
+      <img class="cover" src="assets/img/cover.jpg" alt="Copertina del romanzo «Onde d'amore»">
+      <div>
+        <h2>Una musica che diventa fortezza</h2>
+        <p>Tutto comincia in un piccolo caffè di Sinea: uno sguardo, un disegno, una volpe che esce dal foglio. Poi un treno per Verdegrado, una fortezza che si sveglia sotto le strade e una musica che protegge la città, finché qualcuno non prova a trasformarla in un ordine.</p>
+        <p>Qui le canzoni sono raccolte nell'ordine del libro. Per ognuna, la scena e qualche riga del romanzo; per le canzoni, anche il testo.</p>
+      </div>
+    </section>
+
+    <h2 class="section-title">Le canzoni</h2>
+    <ol class="tracks" id="tracks"></ol>
+
+    <section class="scene" id="scene" hidden>
+      <img id="sceneImg" alt="" hidden>
+      <div class="scene-text">
+        <p class="eyebrow" id="sceneMeta"></p>
+        <h2 id="sceneTitle"></h2>
+        <blockquote id="sceneQuote"></blockquote>
+      </div>
+    </section>
+
+    <section class="lyrics" id="lyrics" hidden>
+      <p class="eyebrow">Testo</p>
+      <div id="lyricsBody" class="lyrics-body"></div>
+    </section>
+  </main>
+
+  <footer class="wrap foot">
+    <p>Musica e parole: Luis Fader · Dal romanzo <a href="https://luisfader.github.io/litmir/#/onde-d-amore">«Onde d'amore»</a> sul sito dei romanzi di Roberto Fader.</p>
+  </footer>
+
+  <div class="player" id="player" hidden>
+    <button class="pbtn" id="prev" type="button" aria-label="Indietro">⏮</button>
+    <button class="pbtn big" id="toggle" type="button" aria-label="Riproduci">▶</button>
+    <button class="pbtn" id="next" type="button" aria-label="Avanti">⏭</button>
+    <div class="pinfo">
+      <span id="nowTitle"></span>
+      <input type="range" id="seek" min="0" max="100" value="0" step="0.1" aria-label="Posizione">
+    </div>
+    <span class="ptime" id="time">0:00</span>
+  </div>
+  <audio id="audio" preload="none"></audio>
+
+  <script src="assets/js/treki.js?v=202611070010"></script>
+  <script src="assets/js/app.js?v=202611070010"></script>
+</body>
+</html>
