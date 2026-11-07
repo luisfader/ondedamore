@@ -23,7 +23,27 @@ window.TREKI = [
           "duration": "3:28"
       },
       {
-          "id": "03-il-destino",
+          "id": "03-il-tocco-della-verita",
+          "title": "Il tocco della verità",
+          "chapter": "Capitolo 5",
+          "scene": "Sotto la Torre Esperanza",
+          "img": "cover.jpg",
+          "quote": "— Il tuo dono non ferisce, — disse dolcemente la volpe. — Mostra.",
+          "song": false,
+          "duration": "3:07"
+      },
+      {
+          "id": "04-verdegrado",
+          "title": "Verdegrado",
+          "chapter": "Capitolo 12",
+          "scene": "L'autobus tra i boschi",
+          "img": "cover.jpg",
+          "quote": "— Tra venti minuti saremo a Verdegrado, — disse Natalia. — Nella mia bella città.",
+          "song": false,
+          "duration": "3:38"
+      },
+      {
+          "id": "05-il-destino",
           "title": "Il destino",
           "chapter": "Capitolo 12",
           "scene": "Il pianoforte della nonna",
@@ -33,7 +53,27 @@ window.TREKI = [
           "duration": "3:17"
       },
       {
-          "id": "04-la-vita-e-bella-con-te",
+          "id": "06-onde-d-amore-tema",
+          "title": "Onde d'amore (tema)",
+          "chapter": "Capitolo 13",
+          "scene": "La melodia della notte",
+          "img": "cover.jpg",
+          "quote": "— Le onde, — sussurrò. — Luis… le onde dell'amore.",
+          "song": false,
+          "duration": "2:34"
+      },
+      {
+          "id": "07-il-segreto-verde",
+          "title": "Il segreto verde",
+          "chapter": "Capitolo 14",
+          "scene": "I vecchi bastioni del parco",
+          "img": "cover.jpg",
+          "quote": "— Una fortezza che si alza quando la città ha bisogno di essere protetta.",
+          "song": false,
+          "duration": "2:26"
+      },
+      {
+          "id": "08-la-vita-e-bella-con-te",
           "title": "La vita è bella con te",
           "chapter": "Capitolo 15",
           "scene": "Gli gnocchi in cucina",
@@ -43,7 +83,37 @@ window.TREKI = [
           "duration": "3:53"
       },
       {
-          "id": "05-balla-con-me-sotto-la-luna",
+          "id": "09-la-fortezza-nella-penombra",
+          "title": "La fortezza nella penombra",
+          "chapter": "Capitolo 15",
+          "scene": "Il pianoforte dopo cena",
+          "img": "cover.jpg",
+          "quote": "— Come la chiamerai?\nLuis guardò il pianoforte, poi lei.\n— «La fortezza nella penombra».",
+          "song": false,
+          "duration": "2:57"
+      },
+      {
+          "id": "10-penombra-misteriosa",
+          "title": "Penombra misteriosa",
+          "chapter": "Capitolo 16",
+          "scene": "Il tetto sulla città dei fantasmi",
+          "img": "cover.jpg",
+          "quote": "— È il passato, venuto a riprendersi la sua sconfitta.",
+          "song": false,
+          "duration": "2:58"
+      },
+      {
+          "id": "11-inno-di-verdegrado",
+          "title": "Inno di Verdegrado",
+          "chapter": "Capitolo 19",
+          "scene": "Il pianoforte nel muro",
+          "img": "cover.jpg",
+          "quote": "— Sole! — gridò qualcuno, e la parola corse di bocca in bocca come una scintilla. — Il nostro Sole!",
+          "song": false,
+          "duration": "3:08"
+      },
+      {
+          "id": "12-balla-con-me-sotto-la-luna",
           "title": "Balla con me sotto la Luna",
           "chapter": "Capitolo 19",
           "scene": "Il ballo in soggiorno",
@@ -53,7 +123,7 @@ window.TREKI = [
           "duration": "3:31"
       },
       {
-          "id": "06-controcorrente",
+          "id": "13-controcorrente",
           "title": "Controcorrente",
           "chapter": "Capitolo 22",
           "scene": "L'autobus contro la fila dei fuggitivi",
@@ -63,7 +133,7 @@ window.TREKI = [
           "duration": "2:48"
       },
       {
-          "id": "07-mi-senti",
+          "id": "14-mi-senti",
           "title": "Mi senti?",
           "chapter": "Capitolo 23",
           "scene": "L'autobus verso la fortezza nera",
@@ -73,7 +143,7 @@ window.TREKI = [
           "duration": "4:37"
       },
       {
-          "id": "08-ti-ricordi",
+          "id": "15-ti-ricordi",
           "title": "Ti ricordi?",
           "chapter": "Capitolo 25",
           "scene": "Il quartiere vecchio si risveglia",
@@ -83,7 +153,7 @@ window.TREKI = [
           "duration": "3:26"
       },
       {
-          "id": "09-due-parole-potenti",
+          "id": "16-due-parole-potenti",
           "title": "Due parole potenti",
           "chapter": "Capitolo 26",
           "scene": "La tastiera giocattolo",
@@ -93,7 +163,7 @@ window.TREKI = [
           "duration": "2:31"
       },
       {
-          "id": "10-il-quaderno",
+          "id": "17-il-quaderno",
           "title": "Il quaderno",
           "chapter": "Capitolo 27",
           "scene": "Il quaderno sul pavimento",
@@ -103,7 +173,17 @@ window.TREKI = [
           "duration": "4:22"
       },
       {
-          "id": "11-pioggia-segreta",
+          "id": "18-la-pioggia",
+          "title": "La pioggia",
+          "chapter": "Capitolo 27",
+          "scene": "La piazza vuota",
+          "img": "cover.jpg",
+          "quote": "Sulla piazza vuota cominciò a piovere. Una pioggia fine, quieta, senza motivo, come se anche il cielo non sapesse che cosa dire.",
+          "song": false,
+          "duration": "2:56"
+      },
+      {
+          "id": "19-pioggia-segreta",
           "title": "Pioggia segreta",
           "chapter": "Capitolo 27",
           "scene": "La pioggia sulla piazza vuota",
@@ -111,5 +191,15 @@ window.TREKI = [
           "quote": "— Forse la pioggia non parla, — sussurrò. — Siamo noi ad avere troppe domande.",
           "song": true,
           "duration": "2:32"
+      },
+      {
+          "id": "20-la-profondita-dell-amore",
+          "title": "La profondità dell'amore",
+          "chapter": "Epilogo",
+          "scene": "Il ponte di Sinea",
+          "img": "cover.jpg",
+          "quote": "— Sono venuta in questo mondo per irradiare amore, — sussurrò al fiume, alla sera, a lui. — E me ne andrò facendo lo stesso. La vita è amore.",
+          "song": false,
+          "duration": "3:05"
       }
 ];
