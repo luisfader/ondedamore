@@ -60,7 +60,7 @@ window.TREKI = [
           "img": "cover.jpg",
           "quote": "— Resisto. Siamo qui. E non andremo via.",
           "song": true,
-          "audio": false
+          "duration": "2:48"
       },
       {
           "id": "07-mi-senti",

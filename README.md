@@ -10,7 +10,7 @@ I brani seguono l'ordine in cui risuonano nel libro; per ognuno, la scena e qual
 | 03 | Il destino *(canzone)* | 12 | 3:17 |
 | 04 | La vita è bella con te *(canzone)* | 15 | 3:53 |
 | 05 | Balla con me sotto la Luna *(canzone)* | 19 | 3:31 |
-| 06 | Controcorrente *(canzone)* | 22 | in arrivo |
+| 06 | Controcorrente *(canzone)* | 22 | 2:48 |
 | 07 | Mi senti? *(canzone)* | 23 | 4:37 |
 | 08 | Ti ricordi? *(canzone)* | 25 | 3:26 |
 | 09 | Due parole potenti *(canzone)* | 26 | 2:31 |
