@@ -28,4 +28,10 @@ I brani seguono l'ordine in cui risuonano nel libro; per ognuno, la scena e qual
 
 Per aggiungere un brano: mettere l'mp3 in `audio/<id>.mp3` e aggiungere una voce in `assets/js/treki.js`; per una canzone, il testo va in `testi/<id>.md` con `song: true` (`[Ritornello]` in testa al ritornello).
 
+## La mappa del romanzo
+
+In fondo alla pagina c'è la mappa dei luoghi del libro (Sinea, il viaggio, Verdegrado, il nord), disegnata in SVG da `assets/js/mappa.js`. Ogni luogo ha la sua scheda: che cosa vi succede, i capitoli (con il link al romanzo) e i brani che vi risuonano. Mentre un brano suona, il suo luogo si accende sulla mappa.
+
+I luoghi sono in `assets/js/luoghi.js`. Per aggiungerne uno: una voce con `x`/`y` (la mappa è 600 × 960, nord in alto), `label`, `side` (`r`, `l`, `t`, `b`: dove va il nome), `ch` (capitoli, `"E"` per l'Epilogo), `tracks` (id dei brani) e `text`.
+
 Musica e parole: Luis Fader.

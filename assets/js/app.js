@@ -60,6 +60,7 @@
     if (i < 0 || i >= list.length) return;
     current = i;
     showScene(i);
+    document.dispatchEvent(new CustomEvent("onde:track", { detail: { id: list[i].id } }));
     $("player").hidden = false;
     if (!hasAudio(i)) {
       if (!audio.paused) audio.pause();
@@ -73,6 +74,12 @@
     audio.play();
     $("nowTitle").textContent = list[i].title;
   }
+
+  // la mappa (mappa.js) fa partire i brani per id
+  window.ondePlay = (id) => {
+    const i = list.findIndex((c) => c.id === id);
+    if (i >= 0) play(i);
+  };
 
   function nextWithAudio(from) {
     let n = from + 1;

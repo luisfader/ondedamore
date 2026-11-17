@@ -10,7 +10,7 @@
   <meta property="og:image" content="assets/img/cover.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,700;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=202611070010">
+  <link rel="stylesheet" href="assets/css/style.css?v=202611170900">
 </head>
 <body>
   <div class="stars" aria-hidden="true"></div>
@@ -24,7 +24,10 @@
       <h1>Onde <em>d'amore</em></h1>
       <p class="lead">Le canzoni e i temi strumentali del romanzo, nell'ordine in cui risuonano nel libro.</p>
       <p class="quote">«Amore mio. Mi senti? Sono qui. Sto arrivando.»</p>
-      <button class="btn" id="playAll" type="button">▶ Ascolta dall'inizio</button>
+      <div class="hero-actions">
+        <button class="btn" id="playAll" type="button">▶ Ascolta dall'inizio</button>
+        <a class="btn ghost" href="#mappa">La mappa dei luoghi</a>
+      </div>
     </div>
   </header>
 
@@ -47,12 +50,29 @@
         <p class="eyebrow" id="sceneMeta"></p>
         <h2 id="sceneTitle"></h2>
         <blockquote id="sceneQuote"></blockquote>
+        <a class="scene-luogo" id="sceneLuogo" href="#mappa" hidden></a>
       </div>
     </section>
 
     <section class="lyrics" id="lyrics" hidden>
       <p class="eyebrow">Testo</p>
       <div id="lyricsBody" class="lyrics-body"></div>
+    </section>
+
+    <section class="mappa" id="mappa" aria-labelledby="mappaTitle">
+      <h2 class="section-title" id="mappaTitle">La mappa del romanzo</h2>
+      <p class="mappa-lead">Da un caffè di Sinea alla fortezza nera oltre il bosco del nord: i luoghi di «Onde d'amore», numerati nell'ordine in cui compaiono nel libro. Tocca un luogo per scoprire che cosa vi succede e ascoltare la musica che vi risuona.</p>
+      <div class="mappa-grid">
+        <div class="mappa-box">
+          <button class="mappa-now" id="mappaNow" type="button" hidden></button>
+          <div class="mappa-svg" id="mappaSvg"></div>
+          <p class="mappa-nota">Mappa immaginata dal romanzo, non in scala.</p>
+        </div>
+        <div class="mappa-side">
+          <div class="luogo-card" id="luogoCard" aria-live="polite"></div>
+          <ol class="luoghi" id="luoghiList"></ol>
+        </div>
+      </div>
     </section>
   </main>
 
@@ -72,7 +92,9 @@
   </div>
   <audio id="audio" preload="none"></audio>
 
-  <script src="assets/js/treki.js?v=202611070010"></script>
-  <script src="assets/js/app.js?v=202611070010"></script>
+  <script src="assets/js/treki.js?v=202611170900"></script>
+  <script src="assets/js/luoghi.js?v=202611170900"></script>
+  <script src="assets/js/app.js?v=202611170900"></script>
+  <script src="assets/js/mappa.js?v=202611170900"></script>
 </body>
 </html>

@@ -96,6 +96,123 @@ body.is-playing h1 em { background: linear-gradient(90deg, var(--accent), #fff1c
 .lyrics-body .chorus { padding-left: 14px; border-left: 2px solid var(--accent); font-style: italic; }
 .lyrics-body .label { display: block; font: 600 11px var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-style: normal; margin-bottom: 4px; }
 
+.hero-actions { display: flex; flex-wrap: wrap; gap: 10px; }
+.btn.ghost { display: inline-block; text-decoration: none; color: var(--ink); background: rgba(11,15,26,.45); border: 1px solid rgba(233,236,244,.35); }
+.btn.ghost:hover { border-color: var(--accent); color: var(--accent); }
+.scene-luogo { display: inline-block; margin-top: 16px; font: 600 13px var(--sans); color: var(--wave); text-decoration: none; border-bottom: 1px dashed rgba(95,227,161,.5); }
+.scene-luogo[hidden] { display: none; }
+
+/* La mappa del romanzo */
+.mappa { scroll-margin-top: 16px; }
+.mappa-lead { margin: 0 0 18px; max-width: 40em; opacity: .9; }
+.mappa-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 22px; align-items: start; }
+.mappa-box { position: relative; }
+.mappa-svg { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: #0b101c; box-shadow: 0 20px 50px rgba(0,0,0,.45); }
+.mappa-svg svg { display: block; width: 100%; height: auto; }
+.mappa-nota { margin: 8px 2px 0; font-size: 12px; color: var(--muted); font-style: italic; }
+.mappa-now { position: absolute; z-index: 2; top: 10px; left: 50%; transform: translateX(-50%); max-width: calc(100% - 20px); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font: 500 12px var(--sans); color: var(--ink); background: rgba(11,15,26,.88); border: 1px solid var(--wave); border-radius: 999px; padding: 6px 12px; cursor: pointer; }
+.mappa-now[hidden] { display: none; }
+.mappa-now b { color: var(--wave); font-weight: 600; }
+body.is-playing .mappa-now .note { display: inline-block; animation: pulse-note 1.2s ease-in-out infinite alternate; }
+@keyframes pulse-note { to { transform: translateY(-2px); color: var(--wave); } }
+
+.mappa svg .campo { fill: #11151f; stroke: #2a2336; stroke-width: 1.5; stroke-dasharray: 3 5; }
+.mappa svg .hills { fill: none; stroke: #33415e; stroke-width: 2.2; stroke-linecap: round; }
+.mappa svg .nera { fill: #05070c; stroke: #7a5476; stroke-width: 1.6; stroke-linejoin: round; }
+.mappa svg .spark { fill: #ffc2e3; }
+.mappa svg .fog { fill: #dfe8ff; opacity: .06; animation: drift 14s ease-in-out infinite alternate; }
+.mappa svg .fog.f2 { animation-duration: 19s; animation-direction: alternate-reverse; }
+@keyframes drift { to { transform: translateX(18px); } }
+.mappa svg .field { fill: #121a2a; stroke: #1c2639; }
+.mappa svg .furrow { stroke: #1a2436; stroke-width: 1; }
+.mappa svg .tree { fill: #173a2e; stroke: #2c6249; stroke-width: 1; stroke-linejoin: round; }
+.mappa svg .tree.dark { fill: #10221d; stroke: #22413a; }
+.mappa svg .tree.park { fill: #1d4a37; stroke: #3b7d5c; }
+.mappa svg .road-bg { fill: none; stroke: #0b101c; stroke-width: 7; stroke-linecap: round; }
+.mappa svg .road { fill: none; stroke: #9c8a5e; stroke-width: 2.4; stroke-dasharray: 7 6; stroke-linecap: round; }
+.mappa svg .rail-ties { fill: none; stroke: #4a5370; stroke-width: 9; stroke-dasharray: 1.6 6; }
+.mappa svg .rail { fill: none; stroke: #8b93ad; stroke-width: 1.8; }
+.mappa svg .house { fill: #1b263b; }
+.mappa svg .house.old { fill: #232b42; }
+.mappa svg .street { fill: none; stroke: #2a3755; stroke-width: 3.2; stroke-linecap: round; }
+.mappa svg .piazza { fill: #1a2640; stroke: #3a4b70; stroke-width: 1.2; }
+.mappa svg .parco { fill: #142c25; stroke: #2c5a48; stroke-width: 1.2; }
+.mappa svg .bastione { fill: none; stroke: #3d7a5c; stroke-width: 1.6; stroke-linecap: round; }
+.mappa svg .canal-bg, .mappa svg .river-bg { fill: none; stroke: #0b101c; stroke-linecap: round; }
+.mappa svg .canal-bg { stroke-width: 11; }
+.mappa svg .canal { fill: none; stroke: #24476f; stroke-width: 7; stroke-linecap: round; }
+.mappa svg .canal-hi, .mappa svg .river-hi { fill: none; stroke: #3d70a3; stroke-width: 2; opacity: .6; }
+.mappa svg .river-bg { stroke-width: 22; }
+.mappa svg .river { fill: none; stroke: #22426c; stroke-width: 16; }
+.mappa svg .river-hi { stroke-width: 3; }
+.mappa svg .bridge { stroke: #8a7a58; stroke-width: 5; stroke-linecap: round; }
+.mappa svg .bridge.wide { stroke-width: 7; }
+.mappa svg .wall { fill: none; stroke: #4fd3a8; stroke-width: 3.5; opacity: .85; }
+.mappa svg .wall-in { fill: none; stroke: #e58bbf; stroke-width: 1.2; opacity: .35; }
+.mappa svg .wtower { fill: #0f1826; stroke: #5fe3a1; stroke-width: 2; }
+.mappa svg .gate { fill: var(--accent); }
+.mappa svg .tower { fill: #0b101c; stroke: #ff9fd0; stroke-width: 1.4; stroke-linejoin: round; }
+.mappa svg .tower.love { stroke: #7fe8c5; }
+.mappa svg .station { fill: #2a3550; stroke: #3c4a6c; }
+.mappa svg .footbridge { fill: none; stroke: var(--accent); stroke-width: 2; opacity: .8; }
+.mappa svg .block { fill: #18223a; }
+.mappa svg .avenue { fill: none; stroke: #0d1322; stroke-width: 3; }
+.mappa svg .region { font: italic 500 27px var(--serif); fill: var(--accent); opacity: .8; letter-spacing: .04em; }
+.mappa svg .compass circle { fill: none; stroke: #34425f; }
+.mappa svg .compass path { fill: var(--accent); opacity: .7; }
+.mappa svg .compass text { font: 600 12px var(--sans); fill: var(--muted); text-anchor: middle; }
+
+.mappa svg .plabel { font: 700 18px var(--serif); fill: var(--ink); paint-order: stroke; stroke: #0b101c; stroke-width: 5px; stroke-linejoin: round; pointer-events: none; }
+.mappa svg .plabel.sel { fill: var(--accent); }
+.mappa svg .pin { cursor: pointer; outline: none; }
+.mappa svg .pin .hit { fill: transparent; }
+.mappa svg .pin .dot { fill: #0b101c; stroke: var(--accent); stroke-width: 2; transition: fill .2s; }
+.mappa svg .pin .num { font: 600 13px var(--sans); fill: var(--accent); text-anchor: middle; pointer-events: none; }
+.mappa svg .pin:hover .dot { fill: #1d2a44; }
+.mappa svg .pin:focus-visible .dot { stroke-width: 3.5; }
+.mappa svg .pin.sel .dot { fill: var(--accent); }
+.mappa svg .pin.sel .num { fill: #0b0f1a; }
+.mappa svg .pin .ring { fill: none; stroke: var(--wave); stroke-width: 2; opacity: 0; transform-box: fill-box; transform-origin: center; }
+.mappa svg .pin.now .dot { stroke: var(--wave); }
+.mappa svg .pin.now .ring { animation: pinwave 2.4s ease-out infinite; animation-play-state: paused; }
+.mappa svg .pin.now .ring.r2 { animation-delay: 1.2s; }
+body.is-playing .mappa svg .pin.now .ring { animation-play-state: running; }
+@keyframes pinwave { 0% { transform: scale(1); opacity: .9; } 100% { transform: scale(3.2); opacity: 0; } }
+
+.luogo-card { background: var(--bg2); border: 1px solid var(--line); border-radius: 12px; padding: 20px 22px; scroll-margin-top: 16px; }
+.luogo-card h3 { font: 700 30px/1.12 var(--serif); color: var(--accent); margin: 0 0 12px; }
+.luogo-card p { margin: 0 0 12px; }
+.luogo-label { font: 600 11px var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px !important; }
+.luogo-brani { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 14px; }
+.chip { font: 500 13px var(--sans); color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 7px 13px; cursor: pointer; transition: border-color .2s, color .2s; }
+.chip:hover { border-color: var(--accent); color: var(--accent); }
+.chip.on { border-color: var(--wave); color: var(--wave); }
+.luogo-cap { font-size: 13px; color: var(--muted); margin-bottom: 0 !important; }
+.luogo-cap a { text-decoration: none; border-bottom: 1px solid rgba(217,181,108,.4); }
+.legend { font-size: 13px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 0 !important; }
+.legend .lg-item { display: inline-flex; align-items: center; gap: 8px; }
+.legend .lg { width: 14px; height: 14px; border-radius: 50%; display: inline-block; flex: none; }
+.legend .lg.dot { border: 2px solid var(--accent); }
+.legend .lg.wave { border: 2px solid var(--wave); box-shadow: 0 0 0 3px rgba(95,227,161,.25); }
+@media (min-width: 761px) and (min-height: 820px) { .mappa-box { position: sticky; top: 16px; } }
+
+.luoghi { list-style: none; margin: 14px 0 0; padding: 0; }
+.luoghi button { width: 100%; display: grid; grid-template-columns: 30px 1fr; column-gap: 8px; align-items: baseline; text-align: left; background: none; border: 0; border-bottom: 1px solid var(--line); color: var(--ink); padding: 9px 6px; cursor: pointer; border-radius: 8px; transition: background .2s; }
+.luoghi button:hover { background: var(--bg2); }
+.luoghi .n { font: 600 12px var(--sans); color: var(--muted); font-variant-numeric: tabular-nums; }
+.luoghi .nm { font: 700 19px/1.2 var(--serif); }
+.luoghi .sub { grid-column: 2; font-size: 12px; color: var(--muted); }
+.luoghi li.sel .nm, .luoghi li.sel .n { color: var(--accent); }
+.luoghi li.now .n { color: var(--wave); }
+.luoghi li.now .nm::after { content: " ♪"; color: var(--wave); }
+
+@media (max-width: 760px) {
+  .mappa-grid { grid-template-columns: 1fr; gap: 14px; }
+  .luogo-card { padding: 16px 18px; }
+  .luogo-card h3 { font-size: 26px; }
+}
+@media (prefers-reduced-motion: reduce) { .mappa svg .fog, .mappa svg .pin.now .ring, body.is-playing .mappa-now .note { animation: none; } }
+
 .foot { color: var(--muted); font-size: 13px; padding-top: 36px; padding-bottom: 32px; }
 
 .player { position: fixed; left: 0; right: 0; bottom: 0; z-index: 5; display: flex; align-items: center; gap: 10px; padding: 12px 16px; background: rgba(10,14,24,.94); backdrop-filter: blur(8px); border-top: 1px solid var(--line); }
